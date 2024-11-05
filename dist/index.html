@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="/dis/output.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/normal.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @layer utilities {
+  
+
+      }
+    </style>
+    <title>Cruds</title>
+  </head>
+  <body class="font-serif text-white scroll-smooth bg-gray-700">
+
+    <div class="containt text-center container mx-auto px-10 pt-10">
+      <h1 class="my-5 text-2xl font-bold">CRUDS</h1>
+      <P class="mb-5">PRODUCT MANAGEMENT SYSTEM</P>
+      <div class="w-full" action="">
+        <div class="title w-full  mb-5 ">
+          <input class="titleInput w-full bg-gray-950 py-3 px-5" type="text" placeholder="Title">
+        </div>
+         <div class="calculate w-full flex gap-3 mb-5 items-center">
+          <input onkeyup="getTotal()" class="priceTitle bg-gray-950 py-3 px-5"  type="number" placeholder="Price">
+          <input onkeyup="getTotal()" class="taxTiltle bg-gray-950 py-3 px-5"  type="number" name="" id="Taxe" placeholder="Taxe">
+          <input onkeyup="getTotal()" class="adsTitle bg-gray-950 py-3 px-5" type="number" name="" id="Ads" placeholder="Ads">
+          <input onkeyup="getTotal()" class="disscountTitle bg-gray-950 py-3 px-5" type="number" name="" id="Discount" placeholder="Discount">
+          <div class="total py-2 px-3 bg-red-700 text-white">Total : </div>
+        </div>
+        <div class="count w-full mb-5 ">
+          <input class="countInput w-full bg-gray-950 py-3 px-5" type="number"  placeholder="Count">
+        </div>
+        <div class="category w-full mb-5 ">
+          <input class="categoryInput w-full bg-gray-950 py-3 px-5" type="text" placeholder="Category">
+        </div>
+        <div class="submit mb-5 w-full py-2 bg-purple-900 hover:bg-purple-950 transition-all cursor-pointer rounded-2xl ">
+          <!-- <input class="submit w-full py-2 bg-purple-900 hover:bg-purple-950 transition-all cursor-pointer rounded-2xl" type="submit" value="Create"> -->
+           Create 
+        </div>
+      </div>
+      <div class="output">
+        <input onkeyup="searchProduct(`${mySearch.value.toLowerCase()}`)" class="my-search  w-full bg-gray-950 py-3 px-5" type="search" name="" id="" placeholder="Search">
+        <div class="btn flex w-full items-center justify-between mt-5">
+          <input onclick="searchBytitle()" class="Search-By-Title  py-2 px-20 basis-2/5 bg-purple-900 hover:bg-purple-950 transition-all cursor-pointer rounded-2xl"  type="button" value="Search By Title">
+          <input onclick="searchByCategory()" class="Search-By-Category py-2 px-20 basis-2/5 bg-purple-900 hover:bg-purple-950 transition-all cursor-pointer rounded-2xl" type="button" value="Search By Category">
+        </div>
+        <div onclick="deleteAllProduct()" class="delete-all my-5 py-2 px-20 basis-2/5 bg-purple-900 hover:bg-purple-950 transition-all cursor-pointer rounded-2xl">
+          Delete ALL ( <span class="count-delete"></span> )
+        </div>
+      </div>
+      <table class="w-full border-separate">
+        <thead class="table-head ">
+          <tr>
+            <th class="font-bold px-3 py-2">Id</th>
+            <th class="font-bold px-3 py-2">Title</th>
+            <th class="font-bold px-3 py-2">Price</th>
+            <th class="font-bold px-3 py-2">Taxe</th>
+            <th class="font-bold px-3 py-2">Ads</th>
+            <th class="font-bold px-3 py-2">Discount</th>
+            <th class="font-bold px-3 py-2">Total</th>
+            <th class="font-bold px-3 py-2">Category</th>
+            <th class="font-bold px-3 py-2">Update</th>
+            <th class="px-3 py-2"></th>
+            <th  class="font-bold px-3 py-2">Delete</th>
+          </tr>
+          
+        </thead>
+        <tbody class="tableBody ">
+
+        </tbody>
+
+      </table>
+      
+        
+      <div class="table-rows">
+        
+
+      </div>
+      
+     
+
+    </div>
+    
+
+    <script src="/master js/scrollreveal.min.js"></script>
+    <script src="/master js/swiper-bundle.min.js"></script>
+    <script src="/master js/master.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+       tailwind.config = {
+      theme: {
+        extend: {
+       
+     
+  
+      
+        }
+      }
+    }
+
+    </script>
+    <script></script>
+  </body>
+</html>

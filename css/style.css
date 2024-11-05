@@ -1,0 +1,4 @@
+table {
+    border-collapse: separate; /* Assurez-vous que border-collapse est défini sur separate */
+    border-spacing: 0 10px; /* 0 pour l'espacement horizontal, 10px pour l'espacement vertical */
+  }
