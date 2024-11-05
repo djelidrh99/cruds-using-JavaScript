@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a web application for managing products developed using JavaScript and Tailwind CSS. The application allows users to create, read, update, and delete product entries easily and efficiently. Users can also search for products by title and category.jj
+This project is a web application for managing products developed using JavaScript and Tailwind CSS. The application allows users to create, read, update, and delete product entries easily and efficiently. Users can also search for products by title and category.
 
 ## Features
 
